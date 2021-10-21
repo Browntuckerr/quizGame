@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 40px;
+    max-width: 800px;
+    width: 80%;
+}
+
+#title{
+    text-align: center;
+    margin: auto;
+    position: relative;
+
+}
+
+#endGame{
+    display: none;
+    text-align: center;
+    margin: auto;
+    position: relative;
+}
+
+#answer{
+    display: none;
+    position:fixed;
+    color:brown;
+    font-style: italic;
+    font-size: 18pt;
+}
+
+#showScore {
+    line-height: 0.8;
+    margin-bottom: 20px;
+    font-size: 8em;
+    font-weight: bolder;
+}
+
+#alert{
+    margin: auto;
+    margin-top: 20px;
+    max-width: 400px;
+}
+
+h1, h2{
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.navbar-brand, .navbar-brand:hover, .navbar-brand:active{
+    color: chocolate;
+}
+
+.scoreStyle{
+    padding: 4px 4px 4px 8px;
+    font-size: 16pt;
+}
+
+.answerSlideUp{
+    animation-name: answer-slide-up;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-duration: 0.30s;
+}
+
+.slideUp{
+    animation-name: slide-up;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    animation-duration: 0.50s;
+}
+
+.slideDown {
+    animation-name: slide-down;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    animation-duration: 0.70s;
+}
+
+.fadeAway{
+    animation-name: fade-away;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.40s;
+}

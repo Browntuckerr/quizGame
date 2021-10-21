@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Quiz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <nav class="navbar nav-success">
+        <a class="navbar-brand" href="./scores.html">View Highscores</a>
+        <span class="navbar-text">Time Left: 0</span>
+    </nav>
+    <div class="container">
+        <div id="title">
+            <h1>Coding Quiz Game</h1>
+            <p>
+                Welcome to the Coding Quiz! This is an example quiz made 
+                entirely of JavaScript. Please answer the following questions 
+                in the least amount of time possible to get a High Score!
+            </p>
+            <button class="btn btn-danger" id="startQuiz">Start the Quiz</button>
+        </div>
+        <div id="showQuestions">
+            <h2 id="randomQuestion">Please wait for question</h2>
+            <button class="btn btn-danger btn-sm btnOption" id="answer1">Answer 1</button>
+            <button class="btn btn-danger btn-sm btnOption" id="answer2">Answer 2</button>
+            <button class="btn btn-danger btn-sm btnOption" id="answer3">Answer 3</button>
+            <button class="btn btn-danger btn-sm btnOption" id="answer4">Answer 4</button>
+        </div>
+        <div id="results"></div>
+
+        <div id="endGame">
+            <h1>Times up!</h1>
+            <p>Your score is:</p>
+            <h3 id="showScore">Blank</h3>
+            <form id="enterName">
+                <div class="form-group">
+                    <label for="inputName">Enter your name</label>
+                    <input type="text" class="form-control" id="playerName" value="">
+                </div>
+                <button type="submit" class="btn btn-danger" id="submitBtn">Submit</button>
+            </form>
+            <div class="alert alert-primary" id="alert" style="display: none;">Please enter your name</div>
+        </div>
+    </div>
+    
+    <script src="scripts.js"></script>
+    <script src="questions.js"></script>
+</body>
+
+</html>
